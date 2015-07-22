@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+    <title>Test4solanteq</title>
+    <script src="js/jquery-2.1.4.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script src="js/scripts.js"></script>
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/jquery-ui.theme.css">
+    <link rel="stylesheet" href="css/jquery-ui.structure.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+<div id="ok-message" title="Success!">
+    <p>Your request successfully processed!</p>
+</div>
+<div id="fail-message" title="Failed!">
+    <p>Request failed:(!</p>
+</div>
+<div id="tabs">
+    <ul>
+        <li><a href="#tabs-1">Add employee</a></li>
+        <li><a href="#tabs-2">Add position</a></li>
+        <li><a href="#tabs-3">Search employee</a></li>
+    </ul>
+    <div id="tabs-1">
+        <form id="form-1">
+            <label for="add_last_name">Last name: </label>
+            <input id="add_last_name" name="add_last_name" type="text" placeholder="Trofimov">
+            <br>
+            <label for="add_first_name">First name: </label>
+            <input id="add_first_name" name="add_first_name" type="text" placeholder="Vladislav">
+            <br>
+            <label for="add_middle_name">Middle name: </label>
+            <input id="add_middle_name" name="add_middle_name" type="text" placeholder="Alexandrovich">
+            <br>
+            <label for="add_birth_date">Birth date: </label>
+            <input id="add_birth_date" name="add_birth_date" type="date" min="1900-01-01">
+            <br>
+            <label for="add_position_sel">Position: </label>
+            <select id="add_position_sel" name="add_position_sel" disabled>
+
+            </select>
+            <br>
+            <button id="add_employee_btn" type="button">Add employee</button>
+        </form>
+    </div>
+    <div id="tabs-2">
+        <form id="form-2">
+            <label for="add_position_field">Position: </label>
+            <input id="add_position_field" name="add_position_field" type="text" placeholder="Developer">
+            <br>
+            <button id="add_position_btn" type="button">Add position</button>
+        </form>
+    </div>
+    <div id="tabs-3">
+        <form id="form-3">
+            <label for="search_last_name">Last name: </label>
+            <input id="search_last_name" name="search_last_name" type="text" placeholder="Trofimov">
+            <br>
+            <label for="search_first_name">First name: </label>
+            <input id="search_first_name" name="search_first_name" type="text" placeholder="Vladislav">
+            <br>
+            <label for="search_middle_name">Middle name: </label>
+            <input id="search_middle_name" name="search_middle_name" type="text" placeholder="Alexandrovich">
+            <br>
+            <label for="search_birth_date">Birth date: </label>
+            <input id="search_birth_date" name="search_birth_date" type="date" min="1900-01-01">
+            <br>
+            <label for="search_position_sel">Position: </label>
+            <select id="search_position_sel" name="search_position_sel" disabled>
+                <option>Not specified</option>
+            </select>
+            <br>
+            <button id="search_employee_btn" type="button">Search</button>
+            <br>
+            <table id="search_results" class="display" cellspacing="0" width="100%">
+                <thead>
+                <tr>
+                    <th>Last name</th>
+                    <th>First name</th>
+                    <th>Middle name</th>
+                    <th>Birth date</th>
+                    <th>Position</th>
+                </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </form>
+    </div>
+</div>
+</body>
+</html>
